@@ -1,0 +1,132 @@
+/* 1.1 typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+  line-height: 31px;
+  font-family: $primary-font;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+
+p, .paragraph {
+  font-weight: 300;
+  color: $text-color;
+  font-size: 17px;
+  line-height: 31px;
+  font-family: $primary-font;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+  color: $text-color-dark;
+  font-family: $primary-font;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+h1, .h1{
+  font-size: 46px;
+}
+
+h2, .h2{
+  font-size: 40px;
+  @include tablet {
+  font-size: 28px;
+  }
+}
+
+h3, .h3{
+  font-size: 36px;
+  @include tablet {
+    font-size: 24px;
+    }
+   @include mobile {
+    font-size: 16px;
+    }
+}
+
+h4, .h4{
+  font-size: 22px;
+}
+
+h5, .h5{
+  font-size: 16px;
+}
+
+h6, .h6{
+  font-size: 13px;
+}
+
+.fs-32{
+  font-size: 32px !important;
+  line-height: 45px;
+
+  @include desktop {
+    font-size: 20px !important;
+    line-height: 28px;
+    }
+  @include tablet {
+    font-size: 20px !important;
+    line-height: 24px;
+    }
+    @include mobile {
+      font-size: 14px !important;
+    line-height: 20px;
+
+      }
+}
+
+.fs-32-p{
+  font-size: 32px !important;
+  line-height: 45px;
+
+  @include desktop-lg {
+    font-size: 24px !important;
+    line-height: 30px;
+    }
+  @include desktop {
+    font-size: 18px !important;
+    line-height: 30px;
+    }
+  @include tablet {
+    font-size: 18px !important;
+    line-height: 30px;
+    }
+    @include mobile {
+      font-size: 14px !important;
+    line-height: 24px;
+      }
+}
+
+.fs-30{
+  font-size: 30px !important;
+  line-height: 45px;
+
+  @include desktop-lg {
+    font-size: 22px !important;
+  line-height: 34px;
+    }
+  @include desktop {
+    font-size: 20px !important;
+  line-height: 30px;
+    }
+  @include tablet {
+    font-size: 20px !important;
+  line-height: 28px;
+    }
+  @include mobile {
+    font-size: 14px !important;
+    line-height: 22px;
+    }
+}
+
+
+.nav-toggle-1 .nav-item a{
+  @include mobile{
+    font-size: 12px;
+  }
+}

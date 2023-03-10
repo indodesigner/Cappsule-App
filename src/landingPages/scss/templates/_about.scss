@@ -1,0 +1,162 @@
+
+.about {
+  position: relative;
+  overflow: visible;
+  background-color: #E3F2EF;
+
+  &-video {
+    position: relative;
+
+    .play-btn {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.about__h4{
+  font-size: 26px !important;
+  line-height: 45px;
+
+  @include desktop {
+    font-size: 20px !important;
+    line-height: 28px;
+    }
+  @include tablet {
+    font-size: 20px !important;
+    line-height: 24px;
+    }
+    @include mobile {
+      font-size: 14px !important;
+    line-height: 20px;
+
+      }
+}
+
+.about__fs__p{
+  font-size: 17px !important;
+  line-height: 35px;
+
+  @include desktop-lg {
+    font-size: 17px !important;
+    line-height: 30px;
+    }
+  @include desktop {
+    font-size: 16px !important;
+    line-height: 30px;
+    }
+  @include tablet {
+    font-size: 14px !important;
+    line-height: 30px;
+    }
+    @include mobile {
+      font-size: 13px !important;
+    line-height: 24px;
+      }
+}
+
+.play-btn {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  color: $white;
+  line-height: 70px;
+  font-size: 20px;
+  text-align: center;
+  background: #7aff91;
+  display: inline-block;
+  transition: .2s ease;
+  box-shadow: 0px 23px 43px 0px rgba(94, 254, 198, 0.3);
+
+  &:hover {
+    color: $white;
+    font-size: 30px;
+  }
+}
+
+.product{
+  position: relative;
+  overflow: visible;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+.about-bg{
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: -1;
+}
+
+.about-hero-section {
+  padding-top: 150px;
+  padding-bottom: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  // margin-bottom: 100px;
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #fff; }
+
+
+
+  .about__card img{
+    width: 100%;
+    // object-fit: cover;
+  }
+  
+  .about .card{
+    border: 1px solid #ffffff;
+  border-radius: 2em;
+  background-repeat: repeat, repeat;
+  background: url("/images/backgrounds/texture.png"), linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(21.5px);
+  }
+  
+  .about__card{
+  padding: 4em !important;
+    h4{
+      color: $text-color-dark;
+    }
+  }
+
+  .download_playstore_btn i{
+ font-size: 24px;
+  }
+
+  .about__download_apps{
+    background: linear-gradient(180deg, #2B2B2B 0%, #000000 100%);
+  }
+
+  .contact__underline hr{
+    width: 140px;
+    border-top: 3px solid #89BDBB;
+    border-radius: 100px;
+  }
+
+  .tel__mailto{
+    color: #26524f !important;
+    font-weight: 400;
+  }
+
+  .tel__mailto:hover{
+    color: #4f948f !important;
+    font-weight: 400;
+  }
+
+  .card__content__order_about{
+    @include desktop{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }

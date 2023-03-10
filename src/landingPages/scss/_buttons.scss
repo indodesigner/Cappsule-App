@@ -1,0 +1,121 @@
+.btn {
+  font-size: 16px;
+  font-family: $primary-font;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  font-weight: 400;
+  border: 0;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: .2s ease;
+  border-radius: 5px !important;
+  // box-shadow: $primary-shadow;
+
+  &:focus {
+    outline: 0;
+    box-shadow: none !important;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.btn-primary {
+  background: $btn-primary;
+  color: $white;
+  transition: .2s ease-out;
+
+  &:active {
+    background: $btn-hover;
+  }
+
+  &:hover {
+    background: $btn-hover;
+    transform: scale(1.05);
+  }
+}
+
+.btn-secondary {
+  background-color: $btn-secondary;
+  color: $white;
+  transition: transform .5s;
+
+  &:active {
+    background: $btn-hover;
+  }
+
+  &:hover {
+    background: $btn-hover;
+    transform: scale(1.05);
+  }
+}
+.btn-lg{
+  padding: 10px 50px;
+}
+
+
+//  .......floating back to top button.................
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  z-index: 9999;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 20px 0 rgb(177, 177, 177);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 10px 2px;
+  right: 30px;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+}
+
+#myBtn:hover {
+  background-color: rgb(37, 62, 99);
+  
+  .btotop{
+    color: rgb(255, 255, 255);
+  }
+}
+
+.btotop{
+  padding: 0 0 0 .8em ;
+}
+
+
+
+// ................init dine style.....................
+.dine-features-links{
+  border: .05em solid;
+  border-color: rgb(214, 214, 214);
+  border-radius: .5em;
+  padding-top: .3em;
+  color: #367cbe;
+  background-color: #ffffff;
+  
+
+  h5{
+    color: #23507a;
+    padding-top: .05em;
+    text-align: center;
+  }
+
+}
+
+
+.dine-features-links:hover {
+  background-color: rgb(97, 168, 216);
+  border-color: rgb(255, 255, 255);
+  i{
+    color: rgb(255, 255, 255);
+  }
+  h5 {
+    color: rgb(255, 255, 255);
+  }
+}
